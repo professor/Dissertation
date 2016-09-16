@@ -1,0 +1,195 @@
+%%
+%% Copyright 2007, 2008, 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%%
+
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%% SP 2008/03/01
+%%
+%%
+%%
+%% $Id: elsarticle-template-num.tex 4 2009-10-24 08:22:58Z rishi $
+%%
+%%
+\documentclass[preprint,12pt,3p]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% if you use PostScript figures in your article
+%% use the graphics package for simple commands
+%% \usepackage{graphics}
+%% or use the graphicx package for more complicated commands
+%% \usepackage{graphicx}
+%% or use the epsfig package if you prefer to use the old commands
+%% \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+\usepackage{lineno}
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+%% \biboptions{comma,round}
+
+% \biboptions{}
+
+%Todd added this for strikeout \sout{}
+\usepackage[normalem]{ulem}
+%Todd added this for the reference to essence.sv.cmu.edu
+\usepackage{hyperref}
+%Todd added this to fix tables with an H
+\usepackage{float}
+
+%Todd's commands
+\newcommand{\strikeout}[1]{\sout{#1}}
+\newcommand{\quotes}[1]{``#1''}
+\newcommand{\participantQuote}[1]{\textit{``#1''}}
+
+\journal{Todd Sedano's ECE Prospectus Committee}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Empirical Study of Iterative Software Development in Academia and Industry: Effectiveness, Optimization, and Extension of the Essence Kernel}
+
+\author{Todd Sedano}
+\ead{professor@gmail.com}
+
+% \author{C\'ecile P\'eraire}
+% \ead{cecile.peraire@sv.cmu.edu}
+
+\address{Carnegie Mellon University}
+\address{Silicon Valley Campus}
+\address{Moffett Field, CA 94035, USA}
+
+
+\begin{abstract}
+Software development continues to be a complex endeavor involving many disciplines and skill sets. Practitioners and researchers experiment, research, and adopt practices to simplify, understand, and create effective processes. 
+
+Given the plethora of practices and methods, the Software Engineering Method and Theory (SEMAT) community created the Essence kernel as a unifying framework for describing and analyzing software engineering endeavors. 
+
+My research goal is to evaluate the Essence kernel for practical use on academic and industrial software development projects, identify issues, and research solutions grounded in empirical evidence. 
+
+At Carnegie Mellon University in Silicon Valley, I conducted a field study with masters of science in software engineering students as they completed team-based capstone projects using the Essence kernel. During weekly Essence Reflection meetings, the Essence kernel checklists helped students identify relevant goals to achieve, which enabled the team to steer the project to higher states. The student teams found value during project inception. However, teams found less value during the construction phase of iterative projects, as the Essence kernel offered few new goals hence loosing its ability to help the team steer the project. The original Essence kernel is method agnostic and does not directly support iterative development. Since most of agile software development occurs via iterative software development, adapting the Essence kernel to have goals for an iterative construction phase would increase its value to software development teams.
+
+Following these results in academia, my objective is to continue my research in industry, with a focus on the practices at Pivotal. One of my next goals is to generate a process model that accurately describes iterative software projects at Pivotal. My plan is to conduct participant-observation of several software development projects at Pivotal. I will interview many software engineers and product managers to collect additional data. I'll iterate my research by incorporating this feedback. My expected result is a process model grounded in empirical data that supports iterative software development. 
+
+%I have demonstrated that generic algorithms can be used to create kernels from empirical data. I created the Partial Ordering fitness function for evaluating candidate kernels against empirical data. The research shows that alternative structures for the kernel are necessary to best reflect the data.
+
+%I created a research tool.
+\end{abstract}
+
+%\begin{keyword}
+%% keywords here, in the form: keyword \sep keyword
+%Essence Kernel \sep Empirical Research \sep Iterative Software Development
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+%\end{keyword}
+
+\end{frontmatter}
+
+%%
+%% Start line numbering here if you want
+%%
+%%\linenumbers
+
+%note that import will do a clearfix
+\input{essence-reflection-meetings}
+\input{essence-steering}
+\input{essence-green-lighting}
+
+% \input{prospectus}
+
+%% References
+%%
+%% Following citation commands can be used in the body text:
+%% Usage of \cite is as follows:
+%%   \cite{key}         ==>>  [#]
+%%   \cite[chap. 2]{key} ==>> [#, chap. 2]
+%%
+
+%% References with bibTeX database:
+
+\bibliographystyle{elsarticle-num}
+% \bibliographystyle{elsarticle-harv}
+% \bibliographystyle{elsarticle-num-names}
+% \bibliographystyle{model1a-num-names}
+% \bibliographystyle{model1b-num-names}
+% \bibliographystyle{model1c-num-names}
+% \bibliographystyle{model1-num-names}
+% \bibliographystyle{model2-names}
+% \bibliographystyle{model3a-num-names}
+% \bibliographystyle{model3-num-names}
+% \bibliographystyle{model4-names}
+% \bibliographystyle{model5-names}
+% \bibliographystyle{model6-num-names}
+
+\bibliography{bibliography}
+
+
+\end{document}
+
+%%
+%% End of file `elsarticle-template-num.tex'.
+
+
+
+
+% "The checklists of an alpha state are joined by AND. The state of an alpha is deemed to be the most advanced (favourable) state for which all checklists are true." (OMG standard)
+
+% "The checklists of a work product level of detail are joined by OR. The level of detail of a work product is deemed to be the most detailed level for which at least one checklist is true." (OMG standard)
+
+fullfilledSuccessorLevel: my_LevelOfDetail 􏰃 my_LevelOfDetail fullfilledSuccessorLevel (l) =
+if (l.successor = 􏰌) {l}
+else
+let mc = {c | c 􏰆 s.successor.checkpoints 􏰊 not c.isFullfilled} in (if (mc = 􏰌) {fullfilledSuccessor(s.successor)} else {l})
+
+
+derive_current_state: my_Alpha 􏰃 my_State
+derive_current_state (a) =
+lets={s|s 􏰆 a.states 􏰊 {ps|ps.successor=s}= 􏰌} in fullfilledSuccessorState(s)Not the same in English
