@@ -1,16 +1,11 @@
-\chapter{Practice and Perception of Team Code Ownership}
-\section{TeamCodeOwnership}
+\chapter{Engendering Team Code Ownership}
+\section{Summary}
 
 \textit{Context:} Team code ownership is a software development practice where any team member can modify any part of the team's code. However, many factors beyond official policy affect a developer's sense of ownership. 
-
-\textit{Objective:} The purpose of this paper is to understand the factors that affect a team's sense of code ownership.
-
+\textit{Objective:} The purpose is to understand the factors that affect a team's sense of code ownership.
 \textit{Method:} Following Constructivist Grounded Theory, the first author conducted participant-observation of several software development projects, and interviewed 21 software engineers, interaction designers, and product managers. Iterating between theoretical sampling and analysis continued until achieving theoretical saturation.
-
 \textit{Results:} Team code ownership is a feeling. Developers feel team code ownership more when they understand the system context, have contributed to the code in question, perceive code quality as high, believe the product will satisfy the user needs, and perceive high team cohesion.  
-
 \textit{Limitations:} Outcomes of grounded theory research are not statistically generalizable to defined populations, and may not apply to organizations with different software development cultures.
-
 \textit{Conclusion:} Team code ownership is rooted in numerous cognitive, emotional, contextual and technical factors and cannot be achieved simply by policy. 
 
 \section{Introduction}
@@ -22,7 +17,7 @@ When team code ownership emerged as a core category in a grounded theory study, 
 
 We quickly discovered that having the right to change a file does not mean that a specific developer will feel empowered to and justified in making a specific change. For example, a developer may feel reluctant to change code that he or she does not really understand. As we refined this core finding and allowed it to drive further data collection, we identified five factors associated with feelings of team code ownership. 
 
-This paper consequently reviews existing research connected to team code ownership (Section \ref{RelatedWork}), describes our grounded theory approach (Section \ref{ResearchMethod}), and presents our emerging results: five factors associated with team code ownership (Section \ref{TeamCodeOwnership}). Section \ref{Discussion} discusses the study's implications and limitations, followed by a summary of its contributions (Section \ref{Conclusion}).
+This chapter consequently reviews existing research connected to team code ownership (Section \ref{RelatedWork}), describes our grounded theory approach (Section \ref{ResearchMethod}), and presents our emerging results: five factors associated with team code ownership (Section \ref{TeamCodeOwnership}). Section \ref{Discussion} discusses the study's implications and limitations, followed by a summary of its contributions (Section \ref{Conclusion}).
 \section{Related Work}
 \label{RelatedWork}
 
@@ -35,16 +30,16 @@ Later, Bird et al. \cite{BirdDontTouchMyCode} contrasted the effects of strong- 
 
 Meanwhile, Murphy  \cite{MurphyIEEESoftware} argued that the concept of code ownership must be unpacked and expanded. He argued that the complexities of code ownership are missed by merely examining git commits to determine who modified which files.
 
-Our paper renames \textit{collective code ownership} to \textit{team code ownership}. For small systems and teams, these terms are synonymous. For a large system with multiple teams, in practice, teams would have strong ownership of their portion of the system. Allowing any pair to modify any part of Microsoft Windows or Pivotal Cloud Foundry is impractical.
+We rename \textit{collective code ownership} to \textit{team code ownership}. For small systems and teams, these terms are synonymous. For a large system with multiple teams, in practice, teams would have strong ownership of their portion of the system. Allowing any pair to modify any part of Microsoft Windows or Pivotal Cloud Foundry is impractical.
 
-Team code ownership requires more than a team saying, \quotes{everyone can modify anything.} Instead, this paper examines how a team feels that they own the code. We define \quotes{sense of team code ownership} as the degree to which individual members of the team feel collective ownership.  
+Team code ownership requires more than a team saying, \quotes{everyone can modify anything.} Instead, this research examines how a team feels that they own the code. We define \quotes{sense of team code ownership} as the degree to which individual members of the team feel collective ownership.  
 
 \begin{table*}[t]
 \renewcommand{\arraystretch}{1.5}
 \centering
 \caption{Theory of Sustainable Software Development: Principles, Policies, and Practices}
 \label{SustainableSoftwareDevelopmentTable}
-\begin{tabular}{|p{2.5in}|p{3.4in}|}
+\begin{tabular}{|p{2.5in}|p{3.5in}|}
 \hline
 \multicolumn{2}{|c|}{Sustainable Software Development}              
 \\
@@ -81,7 +76,7 @@ Caretaking the Code Practices & TDD / BDD \newline Continuous Refactoring  \newl
 
 \subsection{Sustainable Software Development}
 \label{SustainableSoftwareDevelopmentTheory}
-We describe the theory of Sustainable Software Development through Overlapping Pair Rotation in the paper by the same name \cite{SustainableSoftwareDevelopment} and summarize it in Table \ref{SustainableSoftwareDevelopmentTable}. The theory describes how teams can continue to deliver value in spite of team disruptions. The theory is a collection of synergistic principles, policies, and practices encouraging a positive attitude towards team disruption, knowledge sharing and continuity, as well as caring about code quality. The practices actively remove knowledge silos and caretake the code so that any pair can work on any story in the backlog. 
+Chapter \ref{SustainableSoftwareDevelopmentChapter} describes the theory of Sustainable Software Development through Overlapping Pair Rotation and is summarized in Table \ref{SustainableSoftwareDevelopmentTable}. The theory describes how teams can continue to deliver value in spite of team disruptions. The theory is a collection of synergistic principles, policies, and practices encouraging a positive attitude towards team disruption, knowledge sharing and continuity, as well as caring about code quality. The practices actively remove knowledge silos and caretake the code so that any pair can work on any story in the backlog. 
 
 \subsection{Psychological Ownership}
 Psychological ownership refers to \quotes{the feeling of possessiveness and of being psychologically tied to an object} \cite{Pierce2001}. Targets of ownership, whether physical or immaterial, become the extension of one's self: \quotes{What is mine becomes (in my feelings) part of ME} \cite{Isaacs1933}. Ownership can be attached to a part or the whole. Psychological ownership occurs when the object becomes part of the psychological owner's identity. Psychological ownership answers the question, \quotes{What do I feel is mine?}
@@ -96,9 +91,9 @@ Peirce identifies three paths or \quotes{routes} to ownership: controlling the t
 \label{ResearchMethod}
 
 \subsection{Constructivist Grounded Theory}
-We followed Charmaz' approach to Grounded Theory \cite{Charmaz}, which provides an iterative approach to data collection, data coding, and analysis resulting in an emergent theory. The two primary data sources were field notes collected during continuous participant observations of a 7.5-month project and interviews with 21 Pivotal software engineers, interaction designers, and product managers. Interviews were recorded, transcribed, coded, and analyzed using constant comparison. Our presentation is informed by Stol et al.'s reporting guidelines for grounded theory studies in software engineering \cite{StolGTinSE}. 
+We followed Charmaz' approach to Grounded Theory \cite{Charmaz}, which provides an iterative approach to data collection, data coding, and analysis resulting in an emergent theory. The two primary data sources were field notes collected during continuous participant observations of a 7.5-month project and interviews with 21 Pivotal software engineers, interaction designers, and product managers. Interviews were recorded, transcribed, coded, and analyzed using constant comparison. Our presentation is informed by Stol et al.'s reporting guidelines for grounded theory studies in software engineering \cite{StolGroundedTheory}. 
 
-When starting a grounded theory research study, the core question is \quotes{What is happening here?} (Glaser, 1978) \cite{GlaserTheoreticalSensitivity}. Our initial core question was: \quotes{What is happening at Pivotal when it comes to software development?} This question led to the Theory of Sustainable Software Development summarized in Section \ref{SustainableSoftwareDevelopmentTheory}. When team code ownership emerged as one of the core categories of the theory, the researcher collected additional data in order to identify the factors affecting the sense of code ownership. The factors are introduced in Section \ref{TeamCodeOwnership} and are the main contributions of the paper.
+When starting a grounded theory research study, the core question is \quotes{What is happening here?} (Glaser, 1978) \cite{GlaserTheoreticalSensitivity}. Our initial core question was: \quotes{What is happening at Pivotal when it comes to software development?} This question led to the Theory of Sustainable Software Development summarized in Section \ref{SustainableSoftwareDevelopmentTheory}. When team code ownership emerged as one of the core categories of the theory, the researcher collected additional data in order to identify the factors affecting the sense of code ownership. The factors are introduced in Section \ref{TeamCodeOwnership} and are the main contributions for this chapter.
 
 \subsection{Data Collection}
 The primary researcher relied on \quotes{intensive interviews,} which Charmaz summarizes as \quotes{open-ended yet directed, shaped yet emergent, and paced yet unrestricted} \cite{Charmaz}. The technique relies on open-ended questions. The purpose is for the researcher to enter into the participant's personal perspective within the context of the research question. 
@@ -358,7 +353,7 @@ The factors influencing team code ownership presented in Section \ref{TeamCodeOw
 
 \textbf{Credibility:}  The 21 intensive open-ended interviews and numerous field notes from participant-observation serve as a rich and credible data set for the analysis. 
 
-\textbf{Originality:} The paper broadens the idea of team code ownership by acknowledging that collective code ownership is more than a policy statement, and by uniquely identifying factors that affect the team's sense of code ownership.
+\textbf{Originality:} The research broadens the idea of team code ownership by acknowledging that collective code ownership is more than a policy statement, and by uniquely identifying factors that affect the team's sense of code ownership.
 
 \textbf{Resonance:} Several participants reviewed our findings and indicated that both the factors and threats resonate with their experience.
 
@@ -370,7 +365,7 @@ Finally, our results might be influenced by \textbf{researcher bias} or \textbf{
 
 \section{Conclusion}
 \label{Conclusion}
-This paper reports results from a participant-observation, constructivist grounded theory study at Pivotal, a large American software company employing Extreme Programming practices. It provides three main contributions.
+This chapter reports results from a participant-observation, constructivist grounded theory study at Pivotal, a large American software company employing Extreme Programming practices. It provides three main contributions.
 
 1) Our observations clearly indicate that \textbf{team code ownership is a feeling to be engendered not a policy to be decreed}.
 
@@ -381,4 +376,4 @@ This paper reports results from a participant-observation, constructivist ground
 In conclusion, Pivotal's developers find team code ownership highly advantageous; however, transitioning to a team code ownership model is easier for some than others. Some agile practices including continuous pair programming, overlapping pair rotation, continuous refactoring, and test driven development appear to help. Promising angles for future research include more nuanced explorations of the code ownership spectrum, further exploration of the roles of emotion and identity, as well as developing specific practices for facilitating ownership transitions. 
 
 % \section{Acknowledgement}
-Thank you to Rob Mee, David Goudreau, Ryan Richard, and Zach Larson for making this research possible.
+% Thank you to Rob Mee, David Goudreau, Ryan Richard, and Zach Larson for making this research possible.

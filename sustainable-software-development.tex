@@ -1,16 +1,13 @@
-\chapter{Sustainable Software Development through Overlapping Pair Rotation}
-\section{SustainableSoftwareDevelopment}
+\chapter{Constructing Products: Sustainable Software Development}
+\label{SustainableSoftwareDevelopmentChapter}
+
+\section{Summary}
 
 \textit{Context:} Conventional wisdom says that team disruptions (like team churn) should be avoided. However, we have observed software development projects that succeed despite high disruption. 
-
-\textit{Objective:} The purpose of this paper is to understand how to develop software effectively, even in the face of team disruption.
-
+\textit{Objective:} The purpose was to understand how to develop software effectively, even in the face of team disruption.
 \textit{Method:} We followed Constructivist Grounded Theory. We conducted participant-observation of several projects at Pivotal (a software development company), and interviewed 21 software engineers, interaction designers, and product managers. The researchers iteratively sampled and analyzed the collected data until achieving theoretical saturation.
-
-\textit{Results:} This paper introduces a descriptive theory of Sustainable Software Development. The theory encompasses principles, policies, and practices aiming at removing knowledge silos and improving code quality (including discoverability and readability), hence leading to development sustainability. 
-
+\textit{Results:} This research introduces a descriptive theory of Sustainable Software Development. The theory encompasses principles, policies, and practices aiming at removing knowledge silos and improving code quality (including discoverability and readability), hence leading to development sustainability. 
 \textit{Limitations:} While the results are highly relevant to the observed projects at Pivotal, the outcomes may not be transferable to other software development organizations with different software development cultures.
-
 \textit{Conclusion:} The theory refines and extends our understanding of Extreme Programming by adding new principles, policies, and practices (including Overlapping Pair Rotation) and aligning them with the business goal of sustainability. 
 
 \section{Introduction}
@@ -37,7 +34,7 @@ Rigby quantifies turnover using knowledge at risk analysis on abandoned files  \
 \label{ResearchMethod}
 \subsection{Constructivist Grounded Theory}
 
-We adopted Grounded Theory \cite{Charmaz}, which provides an iterative approach to data collection, data coding, and analysis resulting in an emergent theory. We selected Charmaz' Constructivist approach to Grounded Theory, which \quotes{emphasizes understanding and acknowledges that data, interpretations, and resulting theory depend on the researcher's view} \cite{StolGTinSE}. The two primary data sources were field notes collected during continuous participant observations of a seven-month project and interviews with Pivotal software engineers, interaction designers, and product managers. Interviews were recorded, transcribed, coded, and analyzed using constant comparison. In addition, the first author was involved in four other projects as participant-observer.
+We adopted Grounded Theory \cite{Charmaz}, which provides an iterative approach to data collection, data coding, and analysis resulting in an emergent theory. We selected Charmaz' Constructivist approach to Grounded Theory, which \quotes{emphasizes understanding and acknowledges that data, interpretations, and resulting theory depend on the researcher's view} \cite{StolGroundedTheory}. The two primary data sources were field notes collected during continuous participant observations of a seven-month project and interviews with Pivotal software engineers, interaction designers, and product managers. Interviews were recorded, transcribed, coded, and analyzed using constant comparison. In addition, the first author was involved in four other projects as participant-observer.
 
 Grounded Theory immerses the researcher within the context of the research subject from the point of view of the participants. As the research progresses, Grounded Theory allows the researcher to \quotes{incrementally direct the data collection and theoretical ideas.} The theory provides a starting place for inquiry, not a specific goal known at the beginning of the research. As we interact with the data, the data influence how we progress and alter the research direction. When starting a Grounded Theory research study, the core question is, \quotes{What is happening here?} \cite{GlaserTheoreticalSensitivity}. Our initial core question was \quotes{What is happening at Pivotal when it comes to software development?}
 \subsection{Participants}
@@ -68,7 +65,7 @@ Constant comparison allowed us to identify \quotes{the conceptual relationship b
 \centering
 \caption{Quotes for Selected Categories}
 \label{ChainOfEvidenceTable}
-\begin{tabular}{|p{3.15in}|}
+\begin{tabular}{|p{\twoColumnWidth}|}
 \hline
 Engendering Positive Attitudes Toward Team Disruption \\
 \hline
@@ -118,13 +115,13 @@ Pivotal Labs has followed Extreme Programming \cite{BeckExtremeProgramming2004} 
 We only observed teams at Pivotal Labs. Other teams, especially teams in other divisions, might have a different culture and follow different software practices.
 \subsection{Project Context: Project Quattuor}
 \label{ProjectQuattuor}
-While we observed five projects in total, this paper focuses on Project Quattuor. This project shares many similarities with the other four. To preserve client confidentiality, we can only reveal that Project Quattuor's purpose was to develop a mobile application for controlling expensive equipment.
+While we observed five projects in total, this discussion focuses on Project Quattuor. This project shares many similarities with the other four. To preserve client confidentiality, we can only reveal that Project Quattuor's purpose was to develop a mobile application for controlling expensive equipment.
 
 The project lasted 43 weeks. The initial four weeks, called Discovery and Framing, include four main activities: 1) interaction designers investigate user needs through user interviews, 2) product managers define the features for the initial release based on those needs, 3) interaction designers create an initial interaction design and validate their mock-ups with users, and 4) engineers mitigate technology risks. Discovery and Framing was followed by code implementation, resulting in two releases to both the Apple store and Google Play store.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=\oneColumnWidth{}]{sustainable_software_development_images/OriginalDeveloperStaffingV3.jpg}
+\includegraphics[width=\twoColumnWidth{}]{sustainable_software_development_images/OriginalDeveloperStaffingV3.jpg}
 \caption{Planned Developer Staffing}
 \label{PlannedDeveloperStaffing}
 \end{figure}
@@ -151,7 +148,7 @@ Contrary to conventional wisdom, high team disruption did not appear to negative
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=\oneColumnWidth{}]{sustainable_software_development_images/DeveloperStaffingV7.jpg}
+\includegraphics[width=\twoColumnWidth{}]{sustainable_software_development_images/DeveloperStaffingV4.jpg}
 \caption{Actual Developer Staffing}
 \label{DeveloperStaffing}
 \end{figure}
@@ -161,15 +158,18 @@ Contrary to conventional wisdom, high team disruption did not appear to negative
 \centering
 \caption{Theory of Sustainable Software Development: Principles, Policies, and Practices}
 \label{SustainableSoftwareDevelopmentTable}
-\begin{tabular}{|p{1.75in}|p{1.30in}|p{1.75in}|p{1.6in}|}
+\begin{tabular}{|p{2.5in}|p{3.5in}|}
 \hline
-\multicolumn{4}{|c|}{\textbf{Sustainable Software Development}} \\
+\multicolumn{2}{|c|}{Sustainable Software Development}              
+\\
 \hline
-\textbf{Underlying Principles} & \textbf{Policies} & \textbf{Removing Knowledge Silos Practices} & \textbf{Caretaking the Code Practices} \\
+Underlying Principles & Keeping a Positive Attitude Toward Team Disruption \newline Encouraging Knowledge Sharing and Continuity \newline Caring about Code Quality \\ 
 \hline
-Engendering Positive Attitudes Toward Team Disruption & Team Code Ownership & Continuous Pair Programming & TDD / BDD \\
-Encouraging Knowledge Sharing and Continuity & Shared Schedule & Overlapping Pair Rotation & Continuous Refactoring \\
-Caring about Code Quality & Avoid Technical Debt & Knowledge Pollination & Supported by Live on Master \\ 
+Policies & Team Code Ownership \newline Shared Schedule \newline Avoid Technical Debt  \\
+\hline
+Removing Knowledge Silos Practices & Continuous Pair Programming \newline Overlapping Pair Rotation \newline  Knowledge Pollination  \\
+\hline
+Caretaking the Code Practices & TDD / BDD \newline Continuous Refactoring  \newline Supported by Live on Master \\
 \hline
 \end{tabular}
 \end{table*}
@@ -333,7 +333,7 @@ Writing tests after the code is written could produce a safety net for refactori
 \section{Theory Evaluation}
 \label{TheoryEvaluation}
 
-Charmaz identifies four criteria for evaluating a Grounded Theory: credibility (\quotes{Is there sufficient data to merit claims?}), originality (\quotes{Do the categories offer new insights?}), resonance (\quotes{Does the theory make sense to participants?}), and usefulness (\quotes{Does the theory offer useful interpretations?}) \cite{StolGTinSE}. 
+Charmaz identifies four criteria for evaluating a Grounded Theory: credibility (\quotes{Is there sufficient data to merit claims?}), originality (\quotes{Do the categories offer new insights?}), resonance (\quotes{Does the theory make sense to participants?}), and usefulness (\quotes{Does the theory offer useful interpretations?}) \cite{StolGroundedTheory}. 
 
 \textbf{Credibility:} The current data set is rich and its analysis leads to theory saturation. (Saturation means that the properties of the theory are complete and are not affected by new data.) The data set comprises 21 intensive interviews conducted in four different offices, field notes from participant observation on Project Quattuor, and the first author's involvement in four other projects as participant-observer.
 
@@ -359,7 +359,7 @@ We are interested in the tension between individual and team ownership, as well 
 Some programmers naturally adapt to team code ownership, while others struggle with the transition. Future research could follow new Pivotal engineers and examine their journey in transitioning from individual code ownership to team code ownership. Perhaps there are 
 specific practices that Pivotal or the development team could employ to ease the transition. We could also investigate the optimal team size for team code ownership, or explore whether Sustained Software Development works for a distributed team with a Shared Schedule.
 \section{Conclusions}
-This paper introduces a descriptive theory of \quotes{Sustainable Software Development} as a solution to the challenge of software development sustainability for an ever changing workforce. The theory emerged from a Constructivist Grounded Theory research study. By collecting data from 21 intensive interviews conducted in four different Pivotal offices, field notes from participant-observation on the Project Quattuor, and the first author's involvement in four other Pivotal projects as participant-observer, the study investigates the research question \quotes{How do the observed teams develop software effectively while overcoming team disruption?}
+This research introduces a descriptive theory of \quotes{Sustainable Software Development} as a solution to the challenge of software development sustainability for an ever changing workforce. The theory emerged from a Constructivist Grounded Theory research study. By collecting data from 21 intensive interviews conducted in four different Pivotal offices, field notes from participant-observation on the Project Quattuor, and the first author's involvement in four other Pivotal projects as participant-observer, the study investigates the research question \quotes{How do the observed teams develop software effectively while overcoming team disruption?}
 
 The emergent theory is characterized by a collection of synergistic principles, policies, and practices encouraging a positive attitude towards team disruption, knowledge sharing and continuity, as well as caring about code quality. The theory refines and extends Extreme Programming by adding principles, policies, and practices (including Overlapping Pair Rotation) and aligning them with the business goal of sustainability.
 
@@ -369,8 +369,8 @@ The primary benefits to the software developer are the ability to understand the
 
 The primary benefit to the employer is business agility. The engineering team continues to deliver software week after week, month after month, while surviving cataclysmic events. Things do not fall apart when the superstar developer leaves because features or components are not critically tied to a particular individual. Critical feature work can be parallelized since anyone can work on any feature.  The whole team's talents are leveraged.
 
-\section{Acknowledgement}
+% \section{Acknowledgement}
 
-Thank you to Rob Mee, David Goudreau, Ryan Richard, and Zach Larson for making this research possible. Thank you to Karina Sils for creating Figure \ref{PlannedDeveloperStaffing} and Figure \ref{DeveloperStaffing} using Sketch.
+% Thank you to Rob Mee, David Goudreau, Ryan Richard, and Zach Larson for making this research possible. Thank you to Karina Sils for creating Figure \ref{PlannedDeveloperStaffing} and Figure \ref{DeveloperStaffing} using Sketch.
 
 
